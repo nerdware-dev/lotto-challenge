@@ -1,0 +1,10 @@
+<div class="grid grid-rows-7 grid-cols-7 text-red-600 border-2 border-red-300">
+  <div *ngFor="let item of numberList" class="w-full border border-red-300">
+    <div
+      class="w-full text-center p-1"
+      [ngClass]="item.drawn ? 'with-bg-fade-in' : ''"
+    >
+      {{item.num}}
+    </div>
+  </div>
+</div>
